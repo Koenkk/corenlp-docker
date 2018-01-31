@@ -10,7 +10,7 @@ RUN wget http://nlp.stanford.edu/software/stanford-corenlp-full-2017-06-09.zip
 RUN unzip stanford-corenlp-full-2017-06-09.zip && \
 	rm stanford-corenlp-full-2017-06-09.zip
 
-WORKDIR stanford-corenlp-full-2017-06-09.zip
+WORKDIR stanford-corenlp-full-2017-06-09
 
 RUN export CLASSPATH="`find . -name '*.jar'`"
 
